@@ -1,5 +1,9 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Dev Notes
+
+You can eslint all js files using: eslint "\*_/_.js"
+
 ## Available Scripts
 
 In the project directory, you can run:
