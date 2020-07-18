@@ -1,10 +1,16 @@
 import React from "react";
 import "./styles/App.css";
+import "./styles/style.css";
 
 function App() {
   return (
     <div>
-      <div className="App">Hello, World!</div>
+      <div className="App">
+        <header>
+          <h1>Title</h1>
+          <h2>Subtitle</h2>
+        </header>
+      </div>
 
       <link
         rel="stylesheet"
