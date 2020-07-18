@@ -7,8 +7,10 @@ function App() {
     <div>
       <div className="App">
         <header>
-          <h1>Title</h1>
-          <h2>Subtitle</h2>
+          <div className="headText">
+            <h1>Title</h1>
+            <h2>Subtitle</h2>
+          </div>
         </header>
       </div>
 

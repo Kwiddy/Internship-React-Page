@@ -1,4 +1,13 @@
 header {
   background: #f3fbfe;
+  padding: 1vh;
+}
+
+.headText {
+  border-left: 5px solid red;
+  color: red;
+  width: 20%;
+  margin: 10%;
+  padding: 1vh;
 }
 /*# sourceMappingURL=style.css.map */
