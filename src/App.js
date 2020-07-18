@@ -5,7 +5,7 @@ import "./App.css";
 function App() {
   return (
     <div>
-      <div className="App">Herllsdfo, World!</div>
+      <div className="App">Hello, World!</div>
 
       <link
         rel="stylesheet"
