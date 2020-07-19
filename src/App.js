@@ -17,16 +17,10 @@ function App() {
       <div className="App">
         <header>
           <div className="headText">
-            <Typography
-              variant="h1"
-              component="h2"
-              fontSize="1"
-              gutterBottom
-              id="mainHead"
-            >
+            <Typography variant="h1" component="h2" fontSize="1" id="mainHead">
               Lorem ipsum
             </Typography>
-            <Typography variant="h2" gutterBottom>
+            <Typography variant="h2" gutterBottom id="subHead">
               Dolor si amet
             </Typography>
           </div>
