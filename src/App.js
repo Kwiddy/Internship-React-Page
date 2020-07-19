@@ -1,6 +1,15 @@
 import React from "react";
+import Typography from "@material-ui/core/Typography";
+import { makeStyles } from "@material-ui/core/styles";
 import "./styles/App.css";
 import "./styles/style.css";
+
+const useStyles = makeStyles({
+  root: {
+    width: "100%",
+    maxWidth: 500,
+  },
+});
 
 function App() {
   return (
@@ -8,8 +17,12 @@ function App() {
       <div className="App">
         <header>
           <div className="headText">
-            <h1>Title</h1>
-            <h2>Subtitle</h2>
+            <Typography variant="h1" component="h2" gutterBottom>
+              Lorem Ipsum
+            </Typography>
+            <Typography variant="h2" gutterBottom>
+              Dolor Si Amet
+            </Typography>
           </div>
         </header>
       </div>
