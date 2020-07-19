@@ -10,9 +10,14 @@ h1 {
 .headText {
   border-left: 4px solid #73c5ff;
   color: #73c5ff;
-  margin: 1vh;
+  margin: 10vh;
   margin-left: 20%;
   text-align: left;
   padding-left: 2%;
+  font-size: 10px;
+}
+
+#mainHead {
+  color: #022f78;
 }
 /*# sourceMappingURL=style.css.map */
