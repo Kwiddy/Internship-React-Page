@@ -7,14 +7,15 @@ import "./styles/style.css";
 const useStyles = makeStyles({
   root: {
     width: "100%",
-    maxWidth: 500,
   },
 });
 
 function App() {
+  const classes = useStyles();
+
   return (
-    <div>
-      <div className="App">
+    <div className="App">
+      <div className={classes.root}>
         <header>
           <div className="headText">
             <Typography variant="h1" component="h2" fontSize="1" id="mainHead">
