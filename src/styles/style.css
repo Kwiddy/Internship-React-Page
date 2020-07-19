@@ -3,11 +3,7 @@ header {
   padding: 1vh;
 }
 
-h1 {
-  color: #1c3d54;
-}
-
-.headText {
+header .headText {
   border-left: 4px solid #5cbbff;
   color: #5cbbff;
   margin: 7vh;
@@ -17,12 +13,12 @@ h1 {
   font-size: 10px;
 }
 
-#mainHead {
+header .headText #mainHead {
   color: #022f78;
   font-size: 70px;
 }
 
-#subHead {
+header .headText #subHead {
   font-size: 50px;
 }
 /*# sourceMappingURL=style.css.map */
