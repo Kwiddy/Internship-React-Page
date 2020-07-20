@@ -33,6 +33,7 @@ function App() {
             <div className="available-services">
               this is the available-services
             </div>
+            <div className="button-table">Here is the button table</div>
           </div>
         </div>
       </div>
