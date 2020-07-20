@@ -50,7 +50,6 @@ header .headText #subHead {
 }
 
 .page-wrapper .page-block .button-table {
-  border: 1px solid black;
   margin-bottom: 2vh;
 }
 
@@ -59,15 +58,21 @@ header .headText #subHead {
 }
 
 .page-wrapper .page-block .button-table td {
-  width: 50vh;
+  width: 100%;
   padding: 1vh;
 }
 
 .page-wrapper .page-block .button-table #leftCell {
   text-align: left;
+  min-width: 25vh;
 }
 
 .page-wrapper .page-block .button-table #rightCell {
   text-align: right;
+  min-width: 25vh;
+}
+
+.page-wrapper .page-block .button-table button {
+  border-radius: 10vh;
 }
 /*# sourceMappingURL=style.css.map */

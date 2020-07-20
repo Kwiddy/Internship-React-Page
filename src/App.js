@@ -40,13 +40,22 @@ function App() {
                 <tbody>
                   <tr>
                     <td id="leftCell">
-                      <Button variant="contained" color="primary">
-                        HiL
+                      <Button
+                        variant="outlined"
+                        color="primary"
+                        disableElevation
+                      >
+                        Cancel
                       </Button>
                     </td>
                     <td id="rightCell">
-                      <Button variant="contained" color="primary">
-                        HiR
+                      <Button
+                        id="updateButton"
+                        variant="contained"
+                        color="primary"
+                        disableElevation
+                      >
+                        Update services
                       </Button>
                     </td>
                   </tr>
