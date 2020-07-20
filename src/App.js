@@ -30,6 +30,9 @@ function App() {
           <div className="page-block">
             <p> this is the page-block</p>
             <div className="account-details"> this is the account-details </div>
+            <div className="available-services">
+              this is the available-services
+            </div>
           </div>
         </div>
       </div>
