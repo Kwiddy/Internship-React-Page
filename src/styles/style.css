@@ -41,6 +41,8 @@ header .headText #subHead {
 .page-wrapper .page-block .account-details {
   margin-bottom: 2vh;
   margin-top: 2vh;
+  padding-bottom: 2vh;
+  padding-top: 2vh;
   text-align: left;
   color: #134494;
 }
@@ -49,6 +51,8 @@ header .headText #subHead {
   margin-bottom: 2vh;
   text-align: left;
   color: #134494;
+  padding-bottom: 2vh;
+  padding-top: 2vh;
 }
 
 .page-wrapper .page-block .button-table {

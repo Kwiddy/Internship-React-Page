@@ -6,6 +6,7 @@ import Alert from "@material-ui/lab/Alert";
 import Button from "@material-ui/core/Button";
 import IconButton from "@material-ui/core/IconButton";
 import CloseIcon from "@material-ui/icons/Close";
+import Divider from "@material-ui/core/Divider";
 import Collapse from "@material-ui/core/Collapse";
 import "./styles/App.css";
 import "./styles/style.css";
@@ -63,11 +64,11 @@ function App() {
             <div className="account-details">
               <Typography variant="h5">Account details</Typography>
             </div>
-            <hr />
+            <Divider variant="middle" />
             <div className="available-services">
               <Typography variant="h5">Available services</Typography>
             </div>
-            <hr />
+            <Divider variant="middle" />
             <div className="button-table">
               <table>
                 <tbody>
