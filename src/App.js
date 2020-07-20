@@ -60,10 +60,12 @@ function App() {
                 Action completed successfully (TEMP)
               </Alert>
             </Collapse>
-            <div className="account-details"> this is the account-details </div>
+            <div className="account-details">
+              <Typography variant="h5">Account details</Typography>
+            </div>
             <hr />
             <div className="available-services">
-              this is the available-services
+              <Typography variant="h5">Available services</Typography>
             </div>
             <hr />
             <div className="button-table">
