@@ -36,6 +36,15 @@ header {
       padding-top: 2vh;
       text-align: left;
       color: #134494;
+      table {
+        border-collapse: collapse;
+        width: 100%;
+      }
+      table,
+      td {
+        color: black;
+        border: 1px solid #ddd;
+      }
     }
     .available-services {
       margin-bottom: 2vh;

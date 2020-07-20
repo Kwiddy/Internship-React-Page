@@ -63,6 +63,16 @@ function App() {
             </Collapse>
             <div className="account-details">
               <Typography variant="h5">Account details</Typography>
+              <table id="details-table">
+                <tr>
+                  <td>January</td>
+                  <td>$100</td>
+                </tr>
+                <tr>
+                  <td>February</td>
+                  <td>$80</td>
+                </tr>
+              </table>
             </div>
             <Divider variant="middle" />
             <div className="available-services">
