@@ -57,7 +57,7 @@ function App() {
                 }
                 id="action-alert"
               >
-                TEMP: Action completed successfully
+                Action completed successfully (TEMP)
               </Alert>
             </Collapse>
             <div className="account-details"> this is the account-details </div>
