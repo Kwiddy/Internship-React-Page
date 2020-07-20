@@ -31,10 +31,10 @@ function App() {
         <header>
           <div className="headText">
             <Typography variant="h1" component="h2" fontSize="1" id="mainHead">
-              Lorem ipsum
+              Your account
             </Typography>
             <Typography variant="h2" gutterBottom id="subHead">
-              Dolor si amet
+              Linked services
             </Typography>
           </div>
         </header>
