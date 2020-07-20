@@ -41,10 +41,14 @@ header .headText #subHead {
 .page-wrapper .page-block .account-details {
   margin-bottom: 2vh;
   margin-top: 2vh;
+  text-align: left;
+  color: #134494;
 }
 
 .page-wrapper .page-block .available-services {
   margin-bottom: 2vh;
+  text-align: left;
+  color: #134494;
 }
 
 .page-wrapper .page-block .button-table {
