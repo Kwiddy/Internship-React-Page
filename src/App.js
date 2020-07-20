@@ -64,14 +64,16 @@ function App() {
             <div className="account-details">
               <Typography variant="h5">Account details</Typography>
               <table id="details-table">
-                <tr>
-                  <td>Account Name</td>
-                  <td>John Doe</td>
-                </tr>
-                <tr>
-                  <td>Account ID</td>
-                  <td>ABC12345</td>
-                </tr>
+                <tbody>
+                  <tr>
+                    <td>Account Name</td>
+                    <td>John Doe</td>
+                  </tr>
+                  <tr>
+                    <td>Account ID</td>
+                    <td>ABC12345</td>
+                  </tr>
+                </tbody>
               </table>
             </div>
             <Divider variant="middle" />

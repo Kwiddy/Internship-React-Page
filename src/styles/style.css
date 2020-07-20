@@ -57,6 +57,7 @@ header .headText #subHead {
 .page-wrapper .page-block .account-details td {
   color: black;
   border: 1px solid #ddd;
+  padding: 1vh;
 }
 
 .page-wrapper .page-block .available-services {
