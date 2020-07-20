@@ -38,5 +38,26 @@ header {
       border: 1px solid black;
       margin-bottom: 2vh;
     }
+    .button-table {
+      margin-bottom: 2vh;
+      tr {
+        width: 100%;
+      }
+      td {
+        width: 100%;
+        padding: 1vh;
+      }
+      #leftCell {
+        text-align: left;
+        min-width: 25vh;
+      }
+      #rightCell {
+        text-align: right;
+        min-width: 25vh;
+      }
+      button {
+        border-radius: 10vh;
+      }
+    }
   }
 }

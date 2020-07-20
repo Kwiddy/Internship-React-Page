@@ -1,6 +1,8 @@
 import React from "react";
+import ReactDOM from "react-dom";
 import Typography from "@material-ui/core/Typography";
 import { makeStyles } from "@material-ui/core/styles";
+import Button from "@material-ui/core/Button";
 import "./styles/App.css";
 import "./styles/style.css";
 
@@ -34,6 +36,39 @@ function App() {
               this is the available-services
             </div>
             <hr />
+            <div className="button-table">
+              <table>
+                <tbody>
+                  <tr>
+                    <td id="leftCell">
+                      <Button
+                        variant="outlined"
+                        color="primary"
+                        onClick={() => {
+                          alert("TEMP Cancelled");
+                        }}
+                        disableElevation
+                      >
+                        Cancel
+                      </Button>
+                    </td>
+                    <td id="rightCell">
+                      <Button
+                        id="updateButton"
+                        variant="contained"
+                        color="primary"
+                        onClick={() => {
+                          alert("TEMP Services updated");
+                        }}
+                        disableElevation
+                      >
+                        Update services
+                      </Button>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
           </div>
         </div>
       </div>
@@ -42,3 +77,4 @@ function App() {
 }
 
 export default App;
+ReactDOM.render(<App />, document.querySelector("#root"));
