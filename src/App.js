@@ -26,6 +26,9 @@ function App() {
             </Typography>
           </div>
         </header>
+        <div className="page-wrapper">
+          <div className="page-block"> </div>
+        </div>
       </div>
     </div>
   );

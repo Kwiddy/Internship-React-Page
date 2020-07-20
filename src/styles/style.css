@@ -21,4 +21,19 @@ header .headText #mainHead {
 header .headText #subHead {
   font-size: 50px;
 }
+
+.page-wrapper {
+  text-align: center;
+}
+
+.page-wrapper .page-block {
+  display: inline-block;
+  border: 1px solid black;
+  padding: 1vh;
+  margin: 5vh;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  width: 60%;
+}
 /*# sourceMappingURL=style.css.map */
