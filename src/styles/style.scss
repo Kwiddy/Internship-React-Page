@@ -21,6 +21,7 @@ header {
 
 .page-wrapper {
   text-align: center;
+  min-height: 40vh;
   .page-block {
     display: inline-block;
     border: 1px solid black;
@@ -28,5 +29,9 @@ header {
     margin: 5vh;
     align-self: center;
     width: 60%;
+    min-height: 40%;
+    .account-details {
+      border: 1px solid black;
+    }
   }
 }

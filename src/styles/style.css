@@ -24,6 +24,7 @@ header .headText #subHead {
 
 .page-wrapper {
   text-align: center;
+  min-height: 40vh;
 }
 
 .page-wrapper .page-block {
@@ -35,5 +36,10 @@ header .headText #subHead {
       -ms-grid-row-align: center;
       align-self: center;
   width: 60%;
+  min-height: 40%;
+}
+
+.page-wrapper .page-block .account-details {
+  border: 1px solid black;
 }
 /*# sourceMappingURL=style.css.map */

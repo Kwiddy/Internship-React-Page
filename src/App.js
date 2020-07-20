@@ -27,7 +27,10 @@ function App() {
           </div>
         </header>
         <div className="page-wrapper">
-          <div className="page-block"> </div>
+          <div className="page-block">
+            <p> this is the page-block</p>
+            <div className="account-details"> this is the account-details </div>
+          </div>
         </div>
       </div>
     </div>
