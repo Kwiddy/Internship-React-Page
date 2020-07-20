@@ -43,6 +43,9 @@ function App() {
                       <Button
                         variant="outlined"
                         color="primary"
+                        onClick={() => {
+                          alert("TEMP Cancelled");
+                        }}
                         disableElevation
                       >
                         Cancel
@@ -53,6 +56,9 @@ function App() {
                         id="updateButton"
                         variant="contained"
                         color="primary"
+                        onClick={() => {
+                          alert("TEMP Services updated");
+                        }}
                         disableElevation
                       >
                         Update services
