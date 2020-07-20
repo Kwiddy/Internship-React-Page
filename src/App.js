@@ -72,7 +72,7 @@ function App() {
                   <tr>
                     <td id="leftCell">
                       <Button
-                        id="updateButton"
+                        id="cancelButton"
                         variant="outlined"
                         color="primary"
                         onClick={() => updateServices("Cancel")}
