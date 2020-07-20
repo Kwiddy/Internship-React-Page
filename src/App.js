@@ -1,6 +1,8 @@
 import React from "react";
+import ReactDOM from "react-dom";
 import Typography from "@material-ui/core/Typography";
 import { makeStyles } from "@material-ui/core/styles";
+import Button from "@material-ui/core/Button";
 import "./styles/App.css";
 import "./styles/style.css";
 
@@ -33,7 +35,24 @@ function App() {
             <div className="available-services">
               this is the available-services
             </div>
-            <div className="button-table">Here is the button table</div>
+            <div className="button-table">
+              <table>
+                <tbody>
+                  <tr>
+                    <td id="leftCell">
+                      <Button variant="contained" color="primary">
+                        HiL
+                      </Button>
+                    </td>
+                    <td id="rightCell">
+                      <Button variant="contained" color="primary">
+                        HiR
+                      </Button>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
           </div>
         </div>
       </div>
@@ -42,3 +61,4 @@ function App() {
 }
 
 export default App;
+ReactDOM.render(<App />, document.querySelector("#root"));

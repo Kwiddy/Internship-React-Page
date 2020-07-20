@@ -41,6 +41,19 @@ header {
     .button-table {
       border: 1px solid black;
       margin-bottom: 2vh;
+      tr {
+        width: 100%;
+      }
+      td {
+        width: 50vh;
+        padding: 1vh;
+      }
+      #leftCell {
+        text-align: left;
+      }
+      #rightCell {
+        text-align: right;
+      }
     }
   }
 }

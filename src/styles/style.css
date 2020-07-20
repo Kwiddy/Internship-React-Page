@@ -53,4 +53,21 @@ header .headText #subHead {
   border: 1px solid black;
   margin-bottom: 2vh;
 }
+
+.page-wrapper .page-block .button-table tr {
+  width: 100%;
+}
+
+.page-wrapper .page-block .button-table td {
+  width: 50vh;
+  padding: 1vh;
+}
+
+.page-wrapper .page-block .button-table #leftCell {
+  text-align: left;
+}
+
+.page-wrapper .page-block .button-table #rightCell {
+  text-align: right;
+}
 /*# sourceMappingURL=style.css.map */
