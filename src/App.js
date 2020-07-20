@@ -1,8 +1,12 @@
 import React from "react";
-import ReactDOM from "react-dom";
+//import ReactDOM from "react-dom";
 import Typography from "@material-ui/core/Typography";
 import { makeStyles } from "@material-ui/core/styles";
+import Alert from "@material-ui/lab/Alert";
 import Button from "@material-ui/core/Button";
+import IconButton from "@material-ui/core/IconButton";
+import CloseIcon from "@material-ui/icons/Close";
+import Collapse from "@material-ui/core/Collapse";
 import "./styles/App.css";
 import "./styles/style.css";
 
@@ -14,6 +18,12 @@ const useStyles = makeStyles({
 
 function App() {
   const classes = useStyles();
+  const [open, setOpen] = React.useState(false);
+
+  function updateServices(buttonCaller) {
+    setOpen(true);
+    console.log(buttonCaller);
+  }
 
   return (
     <div className="App">
@@ -30,6 +40,26 @@ function App() {
         </header>
         <div className="page-wrapper">
           <div className="page-block">
+            <Collapse in={open}>
+              <Alert
+                action={
+                  <IconButton
+                    aria-label="close"
+                    color="inherit"
+                    size="small"
+                    onClick={() => {
+                      setOpen(false);
+                    }}
+                    id="action-alert"
+                  >
+                    <CloseIcon fontSize="inherit" />
+                  </IconButton>
+                }
+                id="action-alert"
+              >
+                TEMP: Action completed successfully
+              </Alert>
+            </Collapse>
             <div className="account-details"> this is the account-details </div>
             <hr />
             <div className="available-services">
@@ -42,11 +72,10 @@ function App() {
                   <tr>
                     <td id="leftCell">
                       <Button
+                        id="updateButton"
                         variant="outlined"
                         color="primary"
-                        onClick={() => {
-                          alert("TEMP Cancelled");
-                        }}
+                        onClick={() => updateServices("Cancel")}
                         disableElevation
                       >
                         Cancel
@@ -57,9 +86,7 @@ function App() {
                         id="updateButton"
                         variant="contained"
                         color="primary"
-                        onClick={() => {
-                          alert("TEMP Services updated");
-                        }}
+                        onClick={() => updateServices("Update")}
                         disableElevation
                       >
                         Update services
@@ -77,4 +104,4 @@ function App() {
 }
 
 export default App;
-ReactDOM.render(<App />, document.querySelector("#root"));
+//ReactDOM.render(<App />, document.querySelector("#root"));

@@ -42,6 +42,7 @@ header .headText #subHead {
 .page-wrapper .page-block .account-details {
   border: 1px solid black;
   margin-bottom: 2vh;
+  margin-top: 2vh;
 }
 
 .page-wrapper .page-block .available-services {
