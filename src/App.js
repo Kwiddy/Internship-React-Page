@@ -65,12 +65,12 @@ function App() {
               <Typography variant="h5">Account details</Typography>
               <table id="details-table">
                 <tr>
-                  <td>January</td>
-                  <td>$100</td>
+                  <td>Account Name</td>
+                  <td>John Doe</td>
                 </tr>
                 <tr>
-                  <td>February</td>
-                  <td>$80</td>
+                  <td>Account ID</td>
+                  <td>ABC12345</td>
                 </tr>
               </table>
             </div>
