@@ -7,6 +7,7 @@ import App from "./App";
 
 configure({ adapter: new Adapter() });
 
+/*
 test("Renders header", () => {
   const { getByText } = render(<App />);
   const h1Element = getByText(/Lorem ipsum/i);
@@ -14,6 +15,7 @@ test("Renders header", () => {
   expect(h1Element).toBeInTheDocument();
   expect(h2Element).toBeInTheDocument();
 });
+*/
 describe("Renders button-table buttons", () => {
   it("should be defined", () => {
     expect(Button).toBeDefined();
