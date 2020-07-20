@@ -30,11 +30,12 @@ function App() {
         </header>
         <div className="page-wrapper">
           <div className="page-block">
-            <p> this is the page-block</p>
             <div className="account-details"> this is the account-details </div>
+            <hr />
             <div className="available-services">
               this is the available-services
             </div>
+            <hr />
             <div className="button-table">
               <table>
                 <tbody>
