@@ -8,14 +8,22 @@ class dettable extends React.Component {
     };
   }
 
+  // This method should be improved: would return a child unique
+  //    key error if two of name, id, and index were identical
   renderTableData() {
     return this.state.details.map((account, index) => {
       const { name, id } = account;
       return (
-        <tr key={index}>
-          <td>{name}</td>
-          <td>{id}</td>
-        </tr>
+        <tbody key={index}>
+          <tr key={name}>
+            <td>Account Name </td>
+            <td>{name}</td>
+          </tr>
+          <tr key={id}>
+            <td>Account ID</td>
+            <td>{id}</td>
+          </tr>
+        </tbody>
       );
     });
   }
@@ -23,28 +31,10 @@ class dettable extends React.Component {
   render() {
     return (
       <div>
-        <table id="details">
-          <tbody>{this.renderTableData()}</tbody>
-        </table>
+        <table id="details">{this.renderTableData()}</table>
       </div>
     );
   }
-  // render() {
-  //   return (
-  //     <table id="details-table">
-  //       <tbody>
-  //         <tr>
-  //           <td>Account Name</td>
-  //           <td>John Doe</td>
-  //         </tr>
-  //         <tr>
-  //           <td>Account ID</td>
-  //           <td>ABC12345</td>
-  //         </tr>
-  //       </tbody>
-  //     </table>
-  //   );
-  // }
 }
 
 export default dettable;
