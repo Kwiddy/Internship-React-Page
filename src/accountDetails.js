@@ -16,11 +16,11 @@ class dettable extends React.Component {
       return (
         <tbody key={index}>
           <tr key={name}>
-            <td>Account Name </td>
+            <td style={{ width: "25%" }}>Account Name </td>
             <td>{name}</td>
           </tr>
           <tr key={id}>
-            <td>Account ID</td>
+            <td style={{ width: "25%" }}>Account ID</td>
             <td>{id}</td>
           </tr>
         </tbody>
