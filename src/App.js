@@ -11,8 +11,8 @@ import Collapse from "@material-ui/core/Collapse";
 import "./styles/App.css";
 import "./styles/style.css";
 
-import DetTable from "./accountDetails.js";
-import Header from "./header.js";
+import DetTable from "./components/accountDetails.js";
+import Header from "./components/header.js";
 
 const useStyles = makeStyles({
   root: {
