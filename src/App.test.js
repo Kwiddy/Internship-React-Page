@@ -3,6 +3,7 @@ import Adapter from "enzyme-adapter-react-16";
 import { render, wait } from "@testing-library/react";
 import { shallow, configure, mount } from "enzyme";
 import Button from "@material-ui/core/Button";
+import DetTable from "./accountDetails.js";
 import App from "./App";
 
 configure({ adapter: new Adapter() });
@@ -29,5 +30,6 @@ describe("Renders button-table buttons", () => {
     const tree = shallow(<Button id="updateButton" />);
     expect(tree).toMatchSnapshot();
   });
+
   //Need to add tests for mockFunctions for onClick of buttons
 });
