@@ -3,7 +3,10 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ## Dev Notes
 
 You can eslint all js files using: eslint "\*\*_/_\*.js"
+
 Test with coverage using: npm test -- --coverage
+
+All information found is retrieved from sample JSON objects found in src/ExampleData, in practice, this would likely be replaced by objects retrieved from an external source.
 
 ## Available Scripts
 

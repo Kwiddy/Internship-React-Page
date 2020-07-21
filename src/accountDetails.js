@@ -1,10 +1,11 @@
 import React from "react";
+import accountInfo from "./ExampleData/accountInfo.json";
 
 class dettable extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      details: [{ name: "John Doe", id: "ABCD1234" }],
+      details: accountInfo,
     };
   }
 
