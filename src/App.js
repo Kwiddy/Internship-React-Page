@@ -12,6 +12,7 @@ import "./styles/App.css";
 import "./styles/style.css";
 
 import DetTable from "./accountDetails.js";
+import Header from "./header.js";
 
 const useStyles = makeStyles({
   root: {
@@ -30,16 +31,7 @@ function App() {
   return (
     <div className="App">
       <div className={classes.root}>
-        <header>
-          <div className="headText">
-            <Typography variant="h1" component="h2" fontSize="1" id="mainHead">
-              Your account
-            </Typography>
-            <Typography variant="h2" gutterBottom id="subHead">
-              Linked services
-            </Typography>
-          </div>
-        </header>
+        <Header />
         <div className="page-wrapper">
           <div className="page-block">
             <Collapse in={open}>
