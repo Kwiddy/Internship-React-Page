@@ -25,7 +25,6 @@ function App() {
 
   function updateServices(buttonCaller) {
     setOpen(true);
-    console.log(buttonCaller);
   }
 
   return (
