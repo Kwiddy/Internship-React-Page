@@ -11,6 +11,8 @@ import Collapse from "@material-ui/core/Collapse";
 import "./styles/App.css";
 import "./styles/style.css";
 
+import DetTable from "./accountDetails.js";
+
 const useStyles = makeStyles({
   root: {
     width: "100%",
@@ -63,18 +65,7 @@ function App() {
             </Collapse>
             <div className="account-details">
               <Typography variant="h5">Account details</Typography>
-              <table id="details-table">
-                <tbody>
-                  <tr>
-                    <td>Account Name</td>
-                    <td>John Doe</td>
-                  </tr>
-                  <tr>
-                    <td>Account ID</td>
-                    <td>ABC12345</td>
-                  </tr>
-                </tbody>
-              </table>
+              <DetTable />
             </div>
             <Divider variant="middle" />
             <div className="available-services">
