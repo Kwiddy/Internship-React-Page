@@ -9,7 +9,6 @@ configure({ adapter: new Adapter() });
 describe("accountDetails", () => {
   it("should construct properly", () => {
     const wrapper = shallow(<DetTable />);
-    const instance = wrapper.instance();
     expect(wrapper.exists()).toBeTruthy();
     //expect(wrapper.props().details).toEqual({ accountInfo }); //might need to be "toBe"?
   });
