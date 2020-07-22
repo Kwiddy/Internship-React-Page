@@ -128,13 +128,15 @@ exports[`App renders correctly 1`] = `
               <tbody>
                 <tr>
                   <td
+                    className="headCol"
                     style={
                       Object {
                         "width": "25%",
                       }
                     }
                   >
-                    Account Name 
+                    Account Name
+                     
                   </td>
                   <td>
                     Guy Dale
@@ -142,6 +144,7 @@ exports[`App renders correctly 1`] = `
                 </tr>
                 <tr>
                   <td
+                    className="headCol"
                     style={
                       Object {
                         "width": "25%",
@@ -176,10 +179,12 @@ exports[`App renders correctly 1`] = `
               <tbody>
                 <tr>
                   <th>
-                     [TEMP] 
-                  </th>
-                  <th>
-                     Services 
+                    <input
+                      onChange={[Function]}
+                      type="checkbox"
+                      value="checkedall"
+                    />
+                    Services
                   </th>
                   <th>
                      Description 
@@ -187,36 +192,38 @@ exports[`App renders correctly 1`] = `
                 </tr>
                 <tr>
                   <td
-                    style={
-                      Object {
-                        "width": "25%",
-                      }
-                    }
+                    className="service"
                   >
-                    Account Name 
+                    <li>
+                      <input
+                        checked={false}
+                        onChange={[Function]}
+                        type="checkbox"
+                        value="Service 1"
+                      />
+                      Service 1
+                    </li>
                   </td>
                   <td>
-                    Guy Dale
-                  </td>
-                  <td>
-                    [TEMP]
+                    Description of service lorem ipsum dolor sit amet
                   </td>
                 </tr>
                 <tr>
                   <td
-                    style={
-                      Object {
-                        "width": "25%",
-                      }
-                    }
+                    className="service"
                   >
-                    Account ID
+                    <li>
+                      <input
+                        checked={false}
+                        onChange={[Function]}
+                        type="checkbox"
+                        value="Service 2"
+                      />
+                      Service 2
+                    </li>
                   </td>
                   <td>
-                    AVLYM123
-                  </td>
-                  <td>
-                    [TEMP]
+                    Description of service lorem ipsum dolor sit amet
                   </td>
                 </tr>
               </tbody>
