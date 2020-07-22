@@ -20,12 +20,12 @@ class ServiceTable extends React.Component {
             <th> Description </th>
           </tr>
           <tr key={name}>
-            <td style={{ width: "25%" }}>Account Name </td>
+            <td>[TEMP] </td>
             <td>{name}</td>
             <td>[TEMP]</td>
           </tr>
           <tr key={id}>
-            <td style={{ width: "25%" }}>Account ID</td>
+            <td>[TEMP]</td>
             <td>{id}</td>
             <td>[TEMP]</td>
           </tr>

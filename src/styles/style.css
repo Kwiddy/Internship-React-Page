@@ -76,7 +76,8 @@ header .headText #subHead {
 }
 
 .page-wrapper .page-block .available-services table,
-.page-wrapper .page-block .available-services td {
+.page-wrapper .page-block .available-services td,
+.page-wrapper .page-block .available-services th {
   color: black;
   padding: 1vh;
 }
