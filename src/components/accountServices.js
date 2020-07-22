@@ -42,21 +42,20 @@ class ServiceTable extends React.Component {
                 onChange={this.handleAllChecked}
                 value="checkedall"
               />
+              Services
             </th>
-            <th> Services </th>
             <th> Description </th>
           </tr>
           {this.state.services.map((service, index) => {
             return (
               <tr key={id}>
-                <td>
+                <td className="service">
                   <CheckBox
                     key={index}
                     handleCheckChieldElement={this.handleCheckChieldElement}
                     {...service}
                   />
                 </td>
-                <td className="service">hi</td>
                 <td>Description of service lorem ipsum dolor sit amet</td>
               </tr>
             );

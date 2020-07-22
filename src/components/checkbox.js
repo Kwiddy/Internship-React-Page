@@ -1,4 +1,5 @@
 import React from "react";
+import "../styles/checkbox.css";
 
 export const CheckBox = (props) => {
   return (
@@ -9,7 +10,7 @@ export const CheckBox = (props) => {
         type="checkbox"
         checked={props.isChecked}
         value={props.value}
-      />{" "}
+      />
       {props.value}
     </li>
   );
