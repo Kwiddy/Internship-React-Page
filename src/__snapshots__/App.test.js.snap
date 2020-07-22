@@ -1,5 +1,0 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
-
-exports[`Renders button-table buttons should render cancelButton 1`] = `ShallowWrapper {}`;
-
-exports[`Renders button-table buttons should render updateButton correctly 1`] = `ShallowWrapper {}`;

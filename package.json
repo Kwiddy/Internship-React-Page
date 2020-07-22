@@ -49,5 +49,8 @@
         "functions": 50
       }
     }
+  },
+  "devDependencies": {
+    "react-test-renderer": "^16.13.1"
   }
 }

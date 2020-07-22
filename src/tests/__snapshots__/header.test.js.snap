@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header component renders correctly 1`] = `
+<header>
+  <div
+    className="headText"
+  >
+    <h2
+      className="MuiTypography-root MuiTypography-h1"
+      fontSize="1"
+      id="mainHead"
+    />
+    <h2
+      className="MuiTypography-root MuiTypography-h2 MuiTypography-gutterBottom"
+      id="subHead"
+    />
+  </div>
+</header>
+`;

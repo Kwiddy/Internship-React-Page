@@ -31,7 +31,7 @@ function App() {
   return (
     <div className="App">
       <div className={classes.root}>
-        <Header mainText="You account" subText="Linked services" />
+        <Header mainText="Your account" subText="Linked services" />
         <div className="page-wrapper">
           <div className="page-block">
             <Collapse in={open}>
