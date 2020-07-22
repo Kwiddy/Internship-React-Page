@@ -1,17 +1,13 @@
 import React from "react";
-import accountInfo from "../ExampleData/accountInfo.json";
 import CheckBox from "./checkbox.js";
+import accountServices from "../ExampleData/accountServices.json";
 import "../styles/serviceTableStyle.css";
 
 class ServiceTable extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      details: accountInfo,
-      services: [
-        { id: 1, value: "Service 1", isChecked: false },
-        { id: 2, value: "Service 2", isChecked: false },
-      ],
+      services: accountServices,
     };
   }
 
@@ -31,36 +27,19 @@ class ServiceTable extends React.Component {
   };
 
   renderTableData() {
-    return this.state.details.map((account, index) => {
-      const { id } = account;
+    return this.state.services.map((service, index) => {
+      const { id } = service;
       return (
-        <tbody key={index}>
-          <tr>
-            <th>
-              <input
-                type="checkbox"
-                onChange={this.handleAllChecked}
-                value="checkedall"
-              />
-              Services
-            </th>
-            <th> Description </th>
-          </tr>
-          {this.state.services.map((service, index) => {
-            return (
-              <tr key={id}>
-                <td className="service">
-                  <CheckBox
-                    key={index}
-                    handleCheckChieldElement={this.handleCheckChieldElement}
-                    {...service}
-                  />
-                </td>
-                <td>Description of service lorem ipsum dolor sit amet</td>
-              </tr>
-            );
-          })}
-        </tbody>
+        <tr key={id}>
+          <td className="service">
+            <CheckBox
+              key={index}
+              handleCheckChieldElement={this.handleCheckChieldElement}
+              {...service}
+            />
+          </td>
+          <td>Description of service lorem ipsum dolor sit amet</td>
+        </tr>
       );
     });
   }
@@ -68,7 +47,22 @@ class ServiceTable extends React.Component {
   render() {
     return (
       <div>
-        <table id="details">{this.renderTableData()}</table>
+        <table id="details">
+          <tbody>
+            <tr>
+              <th>
+                <input
+                  type="checkbox"
+                  onChange={this.handleAllChecked}
+                  value="checkedall"
+                />
+                Services
+              </th>
+              <th> Description </th>
+            </tr>
+            {this.renderTableData()}
+          </tbody>
+        </table>
       </div>
     );
   }

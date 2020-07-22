@@ -1,0 +1,4 @@
+[
+  { "id": 1, "value": "Service 1", "isChecked": false },
+  { "id": 2, "value": "Service 2", "isChecked": false }
+]
