@@ -60,6 +60,10 @@ header .headText #subHead {
   padding: 1vh;
 }
 
+.page-wrapper .page-block .account-details .headCol {
+  color: #234f9e;
+}
+
 .page-wrapper .page-block .available-services {
   margin-bottom: 2vh;
   text-align: left;
