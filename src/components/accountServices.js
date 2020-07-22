@@ -1,5 +1,6 @@
 import React from "react";
 import accountInfo from "../ExampleData/accountInfo.json";
+import Checkbox from "./checkbox.js";
 
 class ServiceTable extends React.Component {
   constructor(props) {
@@ -15,19 +16,26 @@ class ServiceTable extends React.Component {
       return (
         <tbody key={index}>
           <tr>
-            <th> [TEMP] </th>
+            <th>
+              {" "}
+              <Checkbox />{" "}
+            </th>
             <th> Services </th>
             <th> Description </th>
           </tr>
           <tr key={name}>
-            <td>[TEMP] </td>
-            <td className="service">{name}</td>
-            <td>[TEMP]</td>
+            <td>
+              <Checkbox />
+            </td>
+            <td className="service">Service 1</td>
+            <td>Description of service lorem ipsum dolor sit amet</td>
           </tr>
           <tr key={id}>
-            <td>[TEMP]</td>
-            <td className="service">{id}</td>
-            <td>[TEMP]</td>
+            <td>
+              <Checkbox />
+            </td>
+            <td className="service">Service 2</td>
+            <td>Description of service lorem ipsum dolor sit amet</td>
           </tr>
         </tbody>
       );
