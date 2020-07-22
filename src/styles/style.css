@@ -84,6 +84,7 @@ header .headText #subHead {
 .page-wrapper .page-block .available-services th {
   color: #234f9e;
   padding: 1vh;
+  font-weight: 600;
 }
 
 .page-wrapper .page-block .available-services tr {
