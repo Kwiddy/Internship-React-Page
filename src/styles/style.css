@@ -51,14 +51,13 @@ header .headText #subHead {
   border-collapse: collapse;
   width: 100%;
   margin-top: 1.25vh;
-  margin-bottom: 1.25vh;
 }
 
 .page-wrapper .page-block .account-details table,
 .page-wrapper .page-block .account-details td {
   color: black;
   border: 1px solid #ddd;
-  padding: 1vh;
+  padding: 1.75vh;
 }
 
 .page-wrapper .page-block .account-details .headCol {
