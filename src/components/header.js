@@ -7,10 +7,10 @@ class Header extends React.Component {
       <header>
         <div className="headText">
           <Typography variant="h1" component="h2" fontSize="1" id="mainHead">
-            Your account
+            {this.props.mainText}
           </Typography>
           <Typography variant="h2" gutterBottom id="subHead">
-            Linked services
+            {this.props.subText}
           </Typography>
         </div>
       </header>
