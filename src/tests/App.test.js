@@ -4,6 +4,7 @@ import { render, wait } from "@testing-library/react";
 import { shallow, configure, mount } from "enzyme";
 import Button from "@material-ui/core/Button";
 import DetTable from "../components/accountDetails.js";
+import renderer from "react-test-renderer";
 import App from "../App";
 
 configure({ adapter: new Adapter() });
@@ -32,4 +33,11 @@ describe("Renders button-table buttons", () => {
   });
 
   //Need to add tests for mockFunctions for onClick of buttons
+});
+
+describe("App", () => {
+  it("renders correctly", () => {
+    const rendered = renderer.create(<App />);
+    expect(rendered.toJSON()).toMatchSnapshot();
+  });
 });
