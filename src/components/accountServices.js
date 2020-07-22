@@ -21,12 +21,12 @@ class ServiceTable extends React.Component {
           </tr>
           <tr key={name}>
             <td>[TEMP] </td>
-            <td>{name}</td>
+            <td className="service">{name}</td>
             <td>[TEMP]</td>
           </tr>
           <tr key={id}>
             <td>[TEMP]</td>
-            <td>{id}</td>
+            <td className="service">{id}</td>
             <td>[TEMP]</td>
           </tr>
         </tbody>

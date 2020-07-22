@@ -44,7 +44,7 @@ header .headText #subHead {
   padding-bottom: 2vh;
   padding-top: 2vh;
   text-align: left;
-  color: #134494;
+  color: #234f9e;
 }
 
 .page-wrapper .page-block .account-details table {
@@ -63,7 +63,7 @@ header .headText #subHead {
 .page-wrapper .page-block .available-services {
   margin-bottom: 2vh;
   text-align: left;
-  color: #134494;
+  color: #234f9e;
   padding-bottom: 2vh;
   padding-top: 2vh;
 }
@@ -76,14 +76,22 @@ header .headText #subHead {
 }
 
 .page-wrapper .page-block .available-services table,
-.page-wrapper .page-block .available-services td,
-.page-wrapper .page-block .available-services th {
+.page-wrapper .page-block .available-services td {
   color: black;
+  padding: 1vh;
+}
+
+.page-wrapper .page-block .available-services th {
+  color: #234f9e;
   padding: 1vh;
 }
 
 .page-wrapper .page-block .available-services tr {
   border: 1px solid #ddd;
+}
+
+.page-wrapper .page-block .available-services .service {
+  color: #5cbbff;
 }
 
 .page-wrapper .page-block .button-table {
