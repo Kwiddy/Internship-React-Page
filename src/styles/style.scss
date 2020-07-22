@@ -54,6 +54,20 @@ header {
       color: #134494;
       padding-bottom: 2vh;
       padding-top: 2vh;
+      table {
+        border-collapse: collapse;
+        width: 100%;
+        margin-top: 2vh;
+        border: 1px solid #ddd;
+      }
+      table,
+      td {
+        color: black;
+        padding: 1vh;
+      }
+      tr {
+        border: 1px solid #ddd;
+      }
     }
     .button-table {
       margin-bottom: 2vh;

@@ -169,6 +169,59 @@ exports[`App renders correctly 1`] = `
           >
             Available services
           </h5>
+          <div>
+            <table
+              id="details"
+            >
+              <tbody>
+                <tr>
+                  <th>
+                     [TEMP] 
+                  </th>
+                  <th>
+                     Services 
+                  </th>
+                  <th>
+                     Description 
+                  </th>
+                </tr>
+                <tr>
+                  <td
+                    style={
+                      Object {
+                        "width": "25%",
+                      }
+                    }
+                  >
+                    Account Name 
+                  </td>
+                  <td>
+                    Guy Dale
+                  </td>
+                  <td>
+                    [TEMP]
+                  </td>
+                </tr>
+                <tr>
+                  <td
+                    style={
+                      Object {
+                        "width": "25%",
+                      }
+                    }
+                  >
+                    Account ID
+                  </td>
+                  <td>
+                    AVLYM123
+                  </td>
+                  <td>
+                    [TEMP]
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
         </div>
         <hr
           className="MuiDivider-root MuiDivider-middle"

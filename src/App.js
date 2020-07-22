@@ -12,6 +12,7 @@ import "./styles/App.css";
 import "./styles/style.css";
 
 import DetTable from "./components/accountDetails.js";
+import ServiceTable from "./components/accountServices.js";
 import Header from "./components/header.js";
 
 const useStyles = makeStyles({
@@ -61,6 +62,7 @@ function App() {
             <Divider variant="middle" />
             <div className="available-services">
               <Typography variant="h5">Available services</Typography>
+              <ServiceTable />
             </div>
             <Divider variant="middle" />
             <div className="button-table">

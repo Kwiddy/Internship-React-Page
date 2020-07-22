@@ -68,6 +68,23 @@ header .headText #subHead {
   padding-top: 2vh;
 }
 
+.page-wrapper .page-block .available-services table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-top: 2vh;
+  border: 1px solid #ddd;
+}
+
+.page-wrapper .page-block .available-services table,
+.page-wrapper .page-block .available-services td {
+  color: black;
+  padding: 1vh;
+}
+
+.page-wrapper .page-block .available-services tr {
+  border: 1px solid #ddd;
+}
+
 .page-wrapper .page-block .button-table {
   margin-bottom: 2vh;
   padding-top: 2vh;
