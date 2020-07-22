@@ -1,42 +1,66 @@
 import React from "react";
 import accountInfo from "../ExampleData/accountInfo.json";
-import Checkbox from "./checkbox.js";
+import CheckBox from "./checkbox.js";
+import "../styles/serviceTableStyle.css";
 
 class ServiceTable extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
       details: accountInfo,
+      services: [
+        { id: 1, value: "Service 1", isChecked: false },
+        { id: 2, value: "Service 2", isChecked: false },
+      ],
     };
   }
 
+  handleAllChecked = (event) => {
+    let services = this.state.services;
+    services.forEach((service) => (service.isChecked = event.target.checked));
+    this.setState({ services: services });
+  };
+
+  handleCheckChieldElement = (event) => {
+    let services = this.state.services;
+    services.forEach((service) => {
+      if (service.value === event.target.value)
+        service.isChecked = event.target.checked;
+    });
+    this.setState({ services: services });
+  };
+
   renderTableData() {
     return this.state.details.map((account, index) => {
-      const { name, id } = account;
+      const { id } = account;
       return (
         <tbody key={index}>
           <tr>
             <th>
-              {" "}
-              <Checkbox />{" "}
+              <input
+                type="checkbox"
+                onChange={this.handleAllChecked}
+                value="checkedall"
+              />
             </th>
             <th> Services </th>
             <th> Description </th>
           </tr>
-          <tr key={name}>
-            <td>
-              <Checkbox />
-            </td>
-            <td className="service">Service 1</td>
-            <td>Description of service lorem ipsum dolor sit amet</td>
-          </tr>
-          <tr key={id}>
-            <td>
-              <Checkbox />
-            </td>
-            <td className="service">Service 2</td>
-            <td>Description of service lorem ipsum dolor sit amet</td>
-          </tr>
+          {this.state.services.map((service, index) => {
+            return (
+              <tr key={id}>
+                <td>
+                  <CheckBox
+                    key={index}
+                    handleCheckChieldElement={this.handleCheckChieldElement}
+                    {...service}
+                  />
+                </td>
+                <td className="service">hi</td>
+                <td>Description of service lorem ipsum dolor sit amet</td>
+              </tr>
+            );
+          })}
         </tbody>
       );
     });
