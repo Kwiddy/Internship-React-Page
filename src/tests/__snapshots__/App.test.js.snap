@@ -68,7 +68,10 @@ exports[`App renders correctly 1`] = `
                 <div
                   className="MuiAlert-message"
                 >
-                  Action completed successfully (See Console)
+                  Action completed successfully:
+                  <p
+                    id="actionName"
+                  />
                 </div>
                 <div
                   className="MuiAlert-action"
@@ -92,6 +95,7 @@ exports[`App renders correctly 1`] = `
                     onTouchStart={[Function]}
                     tabIndex={0}
                     type="button"
+                    value=""
                   >
                     <span
                       className="MuiIconButton-label"
