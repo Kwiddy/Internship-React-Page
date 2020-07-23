@@ -27,6 +27,11 @@ function App() {
 
   function updateServices(buttonCaller) {
     setOpen(true);
+    var table = document.getElementById("services-table");
+    for (var i = 1, row; (row = table.rows[i]); i++) {
+      var checkBox = row.getElementsByTagName("input");
+      console.log(checkBox[0].checked);
+    }
   }
 
   return (

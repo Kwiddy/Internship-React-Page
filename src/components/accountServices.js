@@ -34,6 +34,7 @@ class ServiceTable extends React.Component {
           <td className="service">
             <CheckBox
               key={index}
+              id={id}
               handleCheckChieldElement={this.handleCheckChieldElement}
               {...service}
             />
@@ -47,7 +48,7 @@ class ServiceTable extends React.Component {
   render() {
     return (
       <div>
-        <table id="details">
+        <table id="services-table">
           <tbody>
             <tr>
               <th>
