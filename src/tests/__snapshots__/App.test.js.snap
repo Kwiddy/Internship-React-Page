@@ -68,7 +68,7 @@ exports[`App renders correctly 1`] = `
                 <div
                   className="MuiAlert-message"
                 >
-                  Action completed successfully (TEMP)
+                  Action completed successfully (See Console)
                 </div>
                 <div
                   className="MuiAlert-action"
@@ -174,7 +174,7 @@ exports[`App renders correctly 1`] = `
           </h5>
           <div>
             <table
-              id="details"
+              id="services-table"
             >
               <tbody>
                 <tr>
@@ -220,6 +220,114 @@ exports[`App renders correctly 1`] = `
                         value="Service 2"
                       />
                       Service 2
+                    </li>
+                  </td>
+                  <td>
+                    Description of service lorem ipsum dolor sit amet
+                  </td>
+                </tr>
+                <tr>
+                  <td
+                    className="service"
+                  >
+                    <li>
+                      <input
+                        checked={false}
+                        onChange={[Function]}
+                        type="checkbox"
+                        value="Service 3"
+                      />
+                      Service 3
+                    </li>
+                  </td>
+                  <td>
+                    Description of service lorem ipsum dolor sit amet
+                  </td>
+                </tr>
+                <tr>
+                  <td
+                    className="service"
+                  >
+                    <li>
+                      <input
+                        checked={false}
+                        onChange={[Function]}
+                        type="checkbox"
+                        value="Service 4"
+                      />
+                      Service 4
+                    </li>
+                  </td>
+                  <td>
+                    Description of service lorem ipsum dolor sit amet
+                  </td>
+                </tr>
+                <tr>
+                  <td
+                    className="service"
+                  >
+                    <li>
+                      <input
+                        checked={false}
+                        onChange={[Function]}
+                        type="checkbox"
+                        value="Service 5"
+                      />
+                      Service 5
+                    </li>
+                  </td>
+                  <td>
+                    Description of service lorem ipsum dolor sit amet
+                  </td>
+                </tr>
+                <tr>
+                  <td
+                    className="service"
+                  >
+                    <li>
+                      <input
+                        checked={false}
+                        onChange={[Function]}
+                        type="checkbox"
+                        value="Service 6"
+                      />
+                      Service 6
+                    </li>
+                  </td>
+                  <td>
+                    Description of service lorem ipsum dolor sit amet
+                  </td>
+                </tr>
+                <tr>
+                  <td
+                    className="service"
+                  >
+                    <li>
+                      <input
+                        checked={false}
+                        onChange={[Function]}
+                        type="checkbox"
+                        value="Service 7"
+                      />
+                      Service 7
+                    </li>
+                  </td>
+                  <td>
+                    Description of service lorem ipsum dolor sit amet
+                  </td>
+                </tr>
+                <tr>
+                  <td
+                    className="service"
+                  >
+                    <li>
+                      <input
+                        checked={false}
+                        onChange={[Function]}
+                        type="checkbox"
+                        value="Service 8"
+                      />
+                      Service 8
                     </li>
                   </td>
                   <td>
