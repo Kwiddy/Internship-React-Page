@@ -30,7 +30,7 @@ header .headText #subHead {
 .page-wrapper .page-block {
   display: inline-block;
   padding: 1vh;
-  margin: 5vh;
+  margin: 1vh;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
@@ -68,8 +68,8 @@ header .headText #subHead {
   margin-bottom: 2vh;
   text-align: left;
   color: #234f9e;
-  padding-bottom: 2vh;
-  padding-top: 2vh;
+  padding-bottom: 3vh;
+  padding-top: 4vh;
 }
 
 .page-wrapper .page-block .available-services table {
@@ -106,7 +106,7 @@ header .headText #subHead {
 
 .page-wrapper .page-block .button-table {
   margin-bottom: 2vh;
-  padding-top: 2vh;
+  padding-top: 4vh;
 }
 
 .page-wrapper .page-block .button-table tr {
