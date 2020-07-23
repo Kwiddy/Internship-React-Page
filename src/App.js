@@ -27,29 +27,29 @@ function App() {
   const [open, setOpen] = React.useState(false);
 
   // var fs = require("browserify-fs");
-  var fs = require("fs");
+  // var fs = require("fs");
 
   function updateServices(buttonCaller) {
     // setOpen(true);
     if (buttonCaller === "Update") {
-      const newData = JSON.stringify(serviceData);
-      const fileName = "imaginaryFile.json";
-      fs.writeFile(fileName, newData, (err) => {
-        if (err) {
-          console.log("Error writing file", err);
-        } else {
-          console.log("Successfully wrote file");
-          fs.readFile(fileName, "utf-8", function read(err, data) {
-            if (err) {
-              console.log("ERROR");
-              throw err;
-            }
-            const content = data;
-            console.log(content);
-            alert(content);
-          });
-        }
-      });
+      // const newData = JSON.stringify(serviceData);
+      // const fileName = "imaginaryFile.json";
+      // fs.writeFile(fileName, newData, (err) => {
+      //   if (err) {
+      //     console.log("Error writing file", err);
+      //   } else {
+      //     console.log("Successfully wrote file");
+      //     fs.readFile(fileName, "utf-8", function read(err, data) {
+      //       if (err) {
+      //         console.log("ERROR");
+      //         throw err;
+      //       }
+      //       const content = data;
+      //       console.log(content);
+      //     });
+      //   }
+      // });
+      alert(JSON.stringify(serviceData));
     }
   }
 
