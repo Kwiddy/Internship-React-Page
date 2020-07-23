@@ -54,6 +54,7 @@
     }
   },
   "devDependencies": {
-    "react-test-renderer": "^16.13.1"
+    "react-test-renderer": "^16.13.1",
+    "typescript": "^3.9.7"
   }
 }
