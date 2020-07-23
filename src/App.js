@@ -28,6 +28,9 @@ function App() {
   const classes = useStyles();
   const [open, setOpen] = React.useState(false);
 
+  // var fs = require("browserify-fs");
+  var fs = require("fs");
+
   function updateServices(buttonCaller) {
     // setOpen(true);
     if (buttonCaller === "Update") {
