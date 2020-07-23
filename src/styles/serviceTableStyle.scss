@@ -10,8 +10,14 @@ input[type="checkbox"] {
   margin-right: 3vh;
 }
 
-table {
-  tr {
-    padding-top: 2vh;
-  }
+#details {
+  width: 100%;
+  border-collapse: collapse;
+  width: 100%;
+  margin-top: 2vh;
+  border: 1px solid #ddd;
+  border-spacing: 0;
+  border-radius: 8px;
+  border-style: hidden;
+  box-shadow: 0 0 0 1px #ddd;
 }

@@ -3,8 +3,5 @@
   { "id": 2, "value": "Service 2", "isChecked": false },
   { "id": 3, "value": "Service 3", "isChecked": false },
   { "id": 4, "value": "Service 4", "isChecked": false },
-  { "id": 5, "value": "Service 5", "isChecked": false },
-  { "id": 6, "value": "Service 6", "isChecked": false },
-  { "id": 7, "value": "Service 7", "isChecked": false },
-  { "id": 8, "value": "Service 8", "isChecked": false }
+  { "id": 5, "value": "Service 5", "isChecked": false }
 ]
