@@ -30,7 +30,10 @@ function App() {
   // var fs = require("fs");
 
   function updateServices(buttonCaller) {
-    // setOpen(true);
+    setOpen(true);
+    var actionInsertP = document.getElementById("actionName");
+    actionInsertP.innerHTML = " " + buttonCaller;
+
     if (buttonCaller === "Update") {
       // const newData = JSON.stringify(serviceData);
       // const fileName = "imaginaryFile.json";
@@ -68,15 +71,18 @@ function App() {
                     size="small"
                     onClick={() => {
                       setOpen(false);
+                      document.getElementById("actionName").innerHTML = "";
                     }}
                     id="action-alert"
+                    value=""
                   >
                     <CloseIcon fontSize="inherit" />
                   </IconButton>
                 }
                 id="action-alert"
               >
-                Action completed successfully (See Console)
+                Action completed successfully:
+                <p id="actionName"></p>
               </Alert>
             </Collapse>
             <div className="account-details">

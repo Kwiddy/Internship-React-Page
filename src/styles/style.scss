@@ -19,6 +19,12 @@ header {
   }
 }
 
+#actionName {
+  display: inline-block;
+  padding-left: 0.5vh;
+  font-weight: bold;
+}
+
 .page-wrapper {
   text-align: center;
   min-height: 40vh;
