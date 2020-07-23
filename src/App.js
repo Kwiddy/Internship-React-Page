@@ -14,6 +14,7 @@ import "./styles/style.css";
 import DetTable from "./components/accountDetails.js";
 import ServiceTable from "./components/accountServices.js";
 import Header from "./components/header.js";
+import * as serviceData from "./ExampleData/accountServices.json";
 
 const useStyles = makeStyles({
   root: {
@@ -21,20 +22,34 @@ const useStyles = makeStyles({
   },
 });
 
+var fs = require("browserify-fs");
+
 function App() {
   const classes = useStyles();
   const [open, setOpen] = React.useState(false);
 
   function updateServices(buttonCaller) {
     setOpen(true);
-    var table = document.getElementById("services-table");
-    for (var i = 1, row; (row = table.rows[i]); i++) {
-      var checkBox = row.getElementsByTagName("input");
-      if (checkBox[0].checked === false) {
-        console.log(checkBox[0].value + " is unchecked");
-      } else {
-        console.log(checkBox[0].value + " is checked");
-      }
+
+    if (buttonCaller === "Update") {
+      const newData = JSON.stringify(serviceData);
+      const fileName = "imaginaryFile.json";
+
+      fs.writeFile(fileName, newData, (err) => {
+        if (err) {
+          console.log("Error writing file", err);
+        } else {
+          console.log("Successfully wrote file");
+          fs.readFile(fileName, "utf-8", function read(err, data) {
+            if (err) {
+              console.log("ERROR");
+              throw err;
+            }
+            const content = data;
+            console.log(content);
+          });
+        }
+      });
     }
   }
 
@@ -61,7 +76,7 @@ function App() {
                 }
                 id="action-alert"
               >
-                Action completed successfully (TEMP)
+                Action completed successfully (See Console)
               </Alert>
             </Collapse>
             <div className="account-details">
