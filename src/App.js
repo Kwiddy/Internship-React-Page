@@ -26,11 +26,15 @@ function App() {
   const [open, setOpen] = React.useState(false);
 
   function updateServices(buttonCaller) {
-    setOpen(true);
+    //setOpen(true);
     var table = document.getElementById("services-table");
     for (var i = 1, row; (row = table.rows[i]); i++) {
       var checkBox = row.getElementsByTagName("input");
-      console.log(checkBox[0].checked);
+      if (checkBox[0].checked === false) {
+        console.log(checkBox[0].value + " is unchecked");
+      } else {
+        console.log(checkBox[0].value + " is checked");
+      }
     }
   }
 
