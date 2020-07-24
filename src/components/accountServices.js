@@ -50,16 +50,20 @@ class ServiceTable extends React.Component {
       <div>
         <table id="services-table">
           <tbody>
-            <tr>
+            <tr id="headRow">
               <th>
-                <input
-                  type="checkbox"
-                  onChange={this.handleAllChecked}
-                  value="checkedall"
-                  id="checkedall"
-                />
-                <label htmlFor="checkedall"></label>
-                Services
+                <ul>
+                  <li>
+                    <input
+                      type="checkbox"
+                      onChange={this.handleAllChecked}
+                      value="checkedall"
+                      id="checkedall"
+                    />
+                    <label htmlFor="checkedall"></label>
+                    Services
+                  </li>
+                </ul>
               </th>
               <th> Description </th>
             </tr>

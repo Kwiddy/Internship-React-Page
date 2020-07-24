@@ -1,12 +1,14 @@
-ul {
+table ul {
   list-style-type: none;
+  padding: 0;
 }
 
-li {
+table li {
   list-style-type: none;
+  margin: 1vh;
 }
 
 .service {
-  padding: 5vh;
+  padding: 2vh;
 }
 /*# sourceMappingURL=serviceTableStyle.css.map */
