@@ -5,4 +5,8 @@ ul {
 li {
   list-style-type: none;
 }
+
+.service {
+  padding: 5vh;
+}
 /*# sourceMappingURL=serviceTableStyle.css.map */

@@ -1,6 +1,6 @@
 {
     "version": 3,
-    "mappings": "AAAA,AAAA,EAAE,CAAC;EACD,eAAe,EAAE,IAAI;CACtB;;AAED,AAAA,EAAE,CAAC;EACD,eAAe,EAAE,IAAI;CACtB",
+    "mappings": "AAAA,AAAA,EAAE,CAAC;EACD,eAAe,EAAE,IAAI;CACtB;;AAED,AAAA,EAAE,CAAC;EACD,eAAe,EAAE,IAAI;CACtB;;AAED,AAAA,QAAQ,CAAC;EACP,OAAO,EAAE,GAAG;CACb",
     "sources": [
         "serviceTableStyle.scss"
     ],
