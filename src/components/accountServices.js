@@ -68,7 +68,24 @@ class ServiceTable extends React.Component {
   render() {
     return (
       <div>
-        <table id="details">{this.renderTableData()}</table>
+        <table id="services-table">
+          <tbody>
+            <tr>
+              <th>
+                <input
+                  type="checkbox"
+                  onChange={this.handleAllChecked}
+                  value="checkedall"
+                  id="checkedall"
+                />
+                <label htmlFor="checkedall"></label>
+                Services
+              </th>
+              <th> Description </th>
+            </tr>
+            {this.renderTableData()}
+          </tbody>
+        </table>
       </div>
     );
   }

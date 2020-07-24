@@ -6,11 +6,14 @@ export const CheckBox = (props) => {
     <li>
       <input
         key={props.id}
+        id={props.id}
         onChange={props.handleCheckChieldElement}
         type="checkbox"
         checked={props.isChecked}
         value={props.value}
+        className="common-checkbox"
       />
+      <label htmlFor={props.id}></label>
       {props.value}
     </li>
   );
