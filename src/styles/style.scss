@@ -1,5 +1,5 @@
 header {
-  background: #f3fbfe;
+  background: #f2fcff;
   padding: 1vh;
   .headText {
     border-left: 4px solid #5cbbff;
@@ -100,6 +100,7 @@ header {
       }
       .service {
         color: #5cbbff;
+        font-weight: 400;
       }
     }
     .button-table {
@@ -122,6 +123,17 @@ header {
       }
       button {
         border-radius: 10vh;
+      }
+      .MuiButton-containedPrimary {
+        color: #fff;
+        background-color: #1176b6;
+        font-weight: 300;
+        text-transform: none;
+      }
+      .MuiButton-outlinedPrimary {
+        color: #1176b6;
+        border: 1px solid #1176b6;
+        text-transform: none;
       }
     }
   }

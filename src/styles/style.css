@@ -1,5 +1,5 @@
 header {
-  background: #f3fbfe;
+  background: #f2fcff;
   padding: 1vh;
 }
 
@@ -121,6 +121,7 @@ header .headText #subHead {
 
 .page-wrapper .page-block .available-services .service {
   color: #5cbbff;
+  font-weight: 400;
 }
 
 .page-wrapper .page-block .button-table {
@@ -149,5 +150,18 @@ header .headText #subHead {
 
 .page-wrapper .page-block .button-table button {
   border-radius: 10vh;
+}
+
+.page-wrapper .page-block .button-table .MuiButton-containedPrimary {
+  color: #fff;
+  background-color: #1176b6;
+  font-weight: 300;
+  text-transform: none;
+}
+
+.page-wrapper .page-block .button-table .MuiButton-outlinedPrimary {
+  color: #1176b6;
+  border: 1px solid #1176b6;
+  text-transform: none;
 }
 /*# sourceMappingURL=style.css.map */
