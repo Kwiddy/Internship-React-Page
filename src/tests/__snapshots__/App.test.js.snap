@@ -132,7 +132,7 @@ exports[`App renders correctly 1`] = `
               <tbody>
                 <tr>
                   <td
-                    className="headCol"
+                    className="headCol topRow"
                     style={
                       Object {
                         "width": "25%",
@@ -142,7 +142,9 @@ exports[`App renders correctly 1`] = `
                     Account Name
                      
                   </td>
-                  <td>
+                  <td
+                    className="topRow"
+                  >
                     Guy Dale
                   </td>
                 </tr>
@@ -181,14 +183,24 @@ exports[`App renders correctly 1`] = `
               id="services-table"
             >
               <tbody>
-                <tr>
+                <tr
+                  id="headRow"
+                >
                   <th>
-                    <input
-                      onChange={[Function]}
-                      type="checkbox"
-                      value="checkedall"
-                    />
-                    Services
+                    <ul>
+                      <li>
+                        <input
+                          id="checkedall"
+                          onChange={[Function]}
+                          type="checkbox"
+                          value="checkedall"
+                        />
+                        <label
+                          htmlFor="checkedall"
+                        />
+                        Services
+                      </li>
+                    </ul>
                   </th>
                   <th>
                      Description 
@@ -201,9 +213,14 @@ exports[`App renders correctly 1`] = `
                     <li>
                       <input
                         checked={false}
+                        className="common-checkbox"
+                        id={1}
                         onChange={[Function]}
                         type="checkbox"
                         value="Service 1"
+                      />
+                      <label
+                        htmlFor={1}
                       />
                       Service 1
                     </li>
@@ -219,9 +236,14 @@ exports[`App renders correctly 1`] = `
                     <li>
                       <input
                         checked={false}
+                        className="common-checkbox"
+                        id={2}
                         onChange={[Function]}
                         type="checkbox"
                         value="Service 2"
+                      />
+                      <label
+                        htmlFor={2}
                       />
                       Service 2
                     </li>
@@ -237,9 +259,14 @@ exports[`App renders correctly 1`] = `
                     <li>
                       <input
                         checked={false}
+                        className="common-checkbox"
+                        id={3}
                         onChange={[Function]}
                         type="checkbox"
                         value="Service 3"
+                      />
+                      <label
+                        htmlFor={3}
                       />
                       Service 3
                     </li>
@@ -255,9 +282,14 @@ exports[`App renders correctly 1`] = `
                     <li>
                       <input
                         checked={false}
+                        className="common-checkbox"
+                        id={4}
                         onChange={[Function]}
                         type="checkbox"
                         value="Service 4"
+                      />
+                      <label
+                        htmlFor={4}
                       />
                       Service 4
                     </li>
@@ -273,9 +305,14 @@ exports[`App renders correctly 1`] = `
                     <li>
                       <input
                         checked={false}
+                        className="common-checkbox"
+                        id={5}
                         onChange={[Function]}
                         type="checkbox"
                         value="Service 5"
+                      />
+                      <label
+                        htmlFor={5}
                       />
                       Service 5
                     </li>
