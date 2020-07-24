@@ -56,18 +56,30 @@ header .headText #subHead {
 .page-wrapper .page-block .account-details table {
   border-collapse: collapse;
   width: 100%;
-  margin-top: 1.25vh;
+  margin-top: 2vh;
+  border: 1px solid #ddd;
+  border-spacing: 0;
+  border-radius: 8px;
+  border-style: hidden;
+  -webkit-box-shadow: 0 0 0 1px #ddd;
+          box-shadow: 0 0 0 1px #ddd;
 }
 
 .page-wrapper .page-block .account-details table,
 .page-wrapper .page-block .account-details td {
   color: black;
-  border: 1px solid #ddd;
+  border-collapse: collapse;
+  border-radius: 8px;
   padding: 1.75vh;
 }
 
 .page-wrapper .page-block .account-details .headCol {
   color: #234f9e;
+  border-right: 1px solid #ddd;
+}
+
+.page-wrapper .page-block .account-details .topRow {
+  border-bottom: 1px solid #ddd;
 }
 
 .page-wrapper .page-block .available-services {
