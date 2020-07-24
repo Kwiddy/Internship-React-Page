@@ -22,6 +22,12 @@ header .headText #subHead {
   font-size: 50px;
 }
 
+#actionName {
+  display: inline-block;
+  padding-left: 0.5vh;
+  font-weight: bold;
+}
+
 .page-wrapper {
   text-align: center;
   min-height: 40vh;
@@ -30,7 +36,7 @@ header .headText #subHead {
 .page-wrapper .page-block {
   display: inline-block;
   padding: 1vh;
-  margin: 5vh;
+  margin: 1vh;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
@@ -50,14 +56,14 @@ header .headText #subHead {
 .page-wrapper .page-block .account-details table {
   border-collapse: collapse;
   width: 100%;
-  margin-top: 2vh;
+  margin-top: 1.25vh;
 }
 
 .page-wrapper .page-block .account-details table,
 .page-wrapper .page-block .account-details td {
   color: black;
   border: 1px solid #ddd;
-  padding: 1vh;
+  padding: 1.75vh;
 }
 
 .page-wrapper .page-block .account-details .headCol {
@@ -68,8 +74,8 @@ header .headText #subHead {
   margin-bottom: 2vh;
   text-align: left;
   color: #234f9e;
-  padding-bottom: 2vh;
-  padding-top: 2vh;
+  padding-bottom: 3vh;
+  padding-top: 4vh;
 }
 
 .page-wrapper .page-block .available-services table {
@@ -77,6 +83,11 @@ header .headText #subHead {
   width: 100%;
   margin-top: 2vh;
   border: 1px solid #ddd;
+  border-spacing: 0;
+  border-radius: 8px;
+  border-style: hidden;
+  -webkit-box-shadow: 0 0 0 1px #ddd;
+          box-shadow: 0 0 0 1px #ddd;
 }
 
 .page-wrapper .page-block .available-services table,
@@ -101,7 +112,7 @@ header .headText #subHead {
 
 .page-wrapper .page-block .button-table {
   margin-bottom: 2vh;
-  padding-top: 2vh;
+  padding-top: 4vh;
 }
 
 .page-wrapper .page-block .button-table tr {

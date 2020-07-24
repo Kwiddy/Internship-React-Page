@@ -14,6 +14,7 @@ import "./styles/style.css";
 import DetTable from "./components/accountDetails.js";
 import ServiceTable from "./components/accountServices.js";
 import Header from "./components/header.js";
+import * as serviceData from "./ExampleData/accountServices.json";
 
 const useStyles = makeStyles({
   root: {
@@ -25,8 +26,34 @@ function App() {
   const classes = useStyles();
   const [open, setOpen] = React.useState(false);
 
+  // var fs = require("browserify-fs");
+  // var fs = require("fs");
+
   function updateServices(buttonCaller) {
     setOpen(true);
+    var actionInsertP = document.getElementById("actionName");
+    actionInsertP.innerHTML = " " + buttonCaller;
+
+    if (buttonCaller === "Update") {
+      // const newData = JSON.stringify(serviceData);
+      // const fileName = "imaginaryFile.json";
+      // fs.writeFile(fileName, newData, (err) => {
+      //   if (err) {
+      //     console.log("Error writing file", err);
+      //   } else {
+      //     console.log("Successfully wrote file");
+      //     fs.readFile(fileName, "utf-8", function read(err, data) {
+      //       if (err) {
+      //         console.log("ERROR");
+      //         throw err;
+      //       }
+      //       const content = data;
+      //       console.log(content);
+      //     });
+      //   }
+      // });
+      alert(JSON.stringify(serviceData));
+    }
   }
 
   return (
@@ -44,15 +71,18 @@ function App() {
                     size="small"
                     onClick={() => {
                       setOpen(false);
+                      document.getElementById("actionName").innerHTML = "";
                     }}
                     id="action-alert"
+                    value=""
                   >
                     <CloseIcon fontSize="inherit" />
                   </IconButton>
                 }
                 id="action-alert"
               >
-                Action completed successfully (TEMP)
+                Action completed successfully:
+                <p id="actionName"></p>
               </Alert>
             </Collapse>
             <div className="account-details">
