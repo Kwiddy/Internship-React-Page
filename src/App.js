@@ -1,19 +1,21 @@
 import React from "react";
 //import ReactDOM from "react-dom";
 import Typography from "@material-ui/core/Typography";
-import { makeStyles } from "@material-ui/core/styles";
+import { makeStyles } from "@material-ui/core";
 import Alert from "@material-ui/lab/Alert";
 import Button from "@material-ui/core/Button";
 import IconButton from "@material-ui/core/IconButton";
 import CloseIcon from "@material-ui/icons/Close";
 import Divider from "@material-ui/core/Divider";
 import Collapse from "@material-ui/core/Collapse";
+
 import "./styles/App.css";
 import "./styles/style.css";
 
 import DetTable from "./components/accountDetails.js";
 import ServiceTable from "./components/accountServices.js";
 import Header from "./components/header.js";
+import ButtonTable from "./components/buttonTable.js";
 import * as serviceData from "./ExampleData/accountServices.json";
 
 const useStyles = makeStyles({
@@ -96,36 +98,7 @@ function App() {
               <ServiceTable />
             </div>
             <Divider variant="middle" />
-            <div className="button-table">
-              <table>
-                <tbody>
-                  <tr>
-                    <td id="leftCell">
-                      <Button
-                        id="cancelButton"
-                        variant="outlined"
-                        color="primary"
-                        onClick={() => updateServices("Cancel")}
-                        disableElevation
-                      >
-                        Cancel
-                      </Button>
-                    </td>
-                    <td id="rightCell">
-                      <Button
-                        id="updateButton"
-                        variant="contained"
-                        color="primary"
-                        onClick={() => updateServices("Update")}
-                        disableElevation
-                      >
-                        Update services
-                      </Button>
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
+            <ButtonTable onClickHandler={updateServices} />
           </div>
         </div>
       </div>
