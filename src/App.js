@@ -30,6 +30,7 @@ function App() {
   // var fs = require("fs");
 
   function updateServices(buttonCaller) {
+    console.warn("I was clicked");
     setOpen(true);
     var actionInsertP = document.getElementById("actionName");
     actionInsertP.innerHTML = " " + buttonCaller;
