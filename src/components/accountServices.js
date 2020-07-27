@@ -59,6 +59,7 @@ class ServiceTable extends React.Component {
                       onChange={this.handleAllChecked}
                       value="checkedall"
                       id="checkedall"
+                      ref="checkedall"
                     />
                     <label htmlFor="checkedall"></label>
                     Services
