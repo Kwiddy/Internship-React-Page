@@ -32,10 +32,8 @@ function App() {
   // var fs = require("fs");
 
   function updateServices(buttonCaller) {
-    console.warn("I was clicked");
     setOpen(true);
-    var actionInsertP = document.getElementById("actionName");
-    actionInsertP.innerHTML = " " + buttonCaller;
+    document.getElementById("actionName").innerHTML = " " + buttonCaller;
 
     if (buttonCaller === "Update") {
       // const newData = JSON.stringify(serviceData);
@@ -59,11 +57,6 @@ function App() {
     }
   }
 
-  function closeAlert() {
-    setOpen(false);
-    document.getElementById("actionName").innerHTML = "";
-  }
-
   return (
     <div className="App">
       <div className={classes.root}>
@@ -77,7 +70,10 @@ function App() {
                     aria-label="close"
                     color="inherit"
                     size="small"
-                    onClick={closeAlert}
+                    onClick={() => {
+                      setOpen(false);
+                      document.getElementById("actionName").innerHTML = "";
+                    }}
                     id="action-alert"
                     value=""
                   >

@@ -7,7 +7,6 @@ import Button from "@material-ui/core/Button";
 import DetTable from "../components/accountDetails.js";
 import IconButton from "@material-ui/core/IconButton";
 import sinon from "sinon";
-import IconButton from "@material-ui/core/IconButton";
 import App from "../App";
 import Alert from "@material-ui/lab/Alert";
 import * as f from "../App";
