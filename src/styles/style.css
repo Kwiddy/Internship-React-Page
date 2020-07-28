@@ -50,7 +50,7 @@ header .headText #subHead {
   padding-bottom: 2vh;
   padding-top: 2vh;
   text-align: left;
-  color: #234f9e;
+  color: #022f78;
 }
 
 .page-wrapper .page-block .account-details table {
@@ -74,7 +74,7 @@ header .headText #subHead {
 }
 
 .page-wrapper .page-block .account-details .headCol {
-  color: #234f9e;
+  color: #022f78;
   border-right: 1px solid #ddd;
 }
 
@@ -85,7 +85,7 @@ header .headText #subHead {
 .page-wrapper .page-block .available-services {
   margin-bottom: 2vh;
   text-align: left;
-  color: #234f9e;
+  color: #022f78;
   padding-bottom: 3vh;
   padding-top: 4vh;
 }
@@ -109,7 +109,7 @@ header .headText #subHead {
 }
 
 .page-wrapper .page-block .available-services th {
-  color: #234f9e;
+  color: #022f78;
   padding-right: 1vh;
   padding-left: 1vh;
   font-weight: 600;

@@ -1,16 +1,21 @@
+$dark-text: #022f78;
+$light-text: #5cbbff;
+$button-col: #1176b6;
+$background-col: #f2fcff;
+
 header {
-  background: #f2fcff;
+  background: $background-col;
   padding: 1vh;
   .headText {
-    border-left: 4px solid #5cbbff;
-    color: #5cbbff;
+    border-left: 4px solid $light-text;
+    color: $light-text;
     margin: 7vh;
     margin-left: 20%;
     text-align: left;
     padding-left: 2%;
     font-size: 10px;
     #mainHead {
-      color: #022f78;
+      color: $dark-text;
       font-size: 70px;
     }
     #subHead {
@@ -41,7 +46,7 @@ header {
       padding-bottom: 2vh;
       padding-top: 2vh;
       text-align: left;
-      color: #234f9e;
+      color: $dark-text;
       table {
         border-collapse: collapse;
         width: 100%;
@@ -60,7 +65,7 @@ header {
         padding: 1.75vh;
       }
       .headCol {
-        color: #234f9e;
+        color: $dark-text;
         border-right: 1px solid #ddd;
       }
       .topRow {
@@ -70,7 +75,7 @@ header {
     .available-services {
       margin-bottom: 2vh;
       text-align: left;
-      color: #234f9e;
+      color: $dark-text;
       padding-bottom: 3vh;
       padding-top: 4vh;
 
@@ -90,7 +95,7 @@ header {
         padding: 1vh;
       }
       th {
-        color: #234f9e;
+        color: $dark-text;
         padding-right: 1vh;
         padding-left: 1vh;
         font-weight: 600;
@@ -99,7 +104,7 @@ header {
         border: 1px solid #ddd;
       }
       .service {
-        color: #5cbbff;
+        color: $light-text;
         font-weight: 400;
       }
     }
@@ -126,13 +131,13 @@ header {
       }
       .MuiButton-containedPrimary {
         color: #fff;
-        background-color: #1176b6;
+        background-color: $button-col;
         font-weight: 300;
         text-transform: none;
       }
       .MuiButton-outlinedPrimary {
-        color: #1176b6;
-        border: 1px solid #1176b6;
+        color: $button-col;
+        border: 1px solid $button-col;
         text-transform: none;
       }
     }
