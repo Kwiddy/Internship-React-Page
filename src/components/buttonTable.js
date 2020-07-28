@@ -2,9 +2,9 @@ import React from "react";
 import Button from "@material-ui/core/Button";
 
 class ButtonTable extends React.Component {
-  constructor(props) {
-    super(props);
-  }
+  // constructor(props) {
+  //   super(props);
+  // }
 
   render() {
     return (

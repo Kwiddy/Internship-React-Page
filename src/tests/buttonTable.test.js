@@ -28,7 +28,7 @@ describe("ButtonTable", () => {
     button.simulate("click");
     expect(mockFunction).toHaveBeenCalled();
     expect(mockFunction.mock.calls[0][0]).toBe("Update");
-    //const alertComp = ReactTestUtils.renderIntoDocument(<Alert />);
+    // const alertComp = ReactTestUtils.renderIntoDocument(<Alert />);
     // expect(ReactTestUtils.isDOMComponent(<Alert />)).toBe(true);
 
     // const wrapper2 = shallow(<App />);

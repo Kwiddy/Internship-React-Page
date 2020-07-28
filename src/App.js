@@ -3,7 +3,7 @@ import React from "react";
 import Typography from "@material-ui/core/Typography";
 import { makeStyles } from "@material-ui/core";
 import Alert from "@material-ui/lab/Alert";
-import Button from "@material-ui/core/Button";
+// import Button from "@material-ui/core/Button";
 import IconButton from "@material-ui/core/IconButton";
 import CloseIcon from "@material-ui/icons/Close";
 import Divider from "@material-ui/core/Divider";
@@ -57,6 +57,11 @@ function App() {
     }
   }
 
+  function closeAlert() {
+    setOpen(false);
+    document.getElementById("actionName").innerHTML = "";
+  }
+
   return (
     <div className="App">
       <div className={classes.root}>
@@ -70,10 +75,7 @@ function App() {
                     aria-label="close"
                     color="inherit"
                     size="small"
-                    onClick={() => {
-                      setOpen(false);
-                      document.getElementById("actionName").innerHTML = "";
-                    }}
+                    onClick={closeAlert}
                     id="action-alert"
                     value=""
                   >
