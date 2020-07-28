@@ -14,8 +14,11 @@ import ButtonTable from "../components/buttonTable.js";
 configure({ adapter: new Adapter() });
 
 describe("ButtonTable", () => {
+  let newElement = document.createElement("p");
+  newElement.id = "actionName";
+
   const mockFunction = jest.fn();
-  const wrapper = shallow(<ButtonTable onClickHandler={mockFunction} />);
+  const wrapper = shallow(<ButtonTable setOpen={mockFunction} />);
 
   const useStateSpy = jest.spyOn(React, "useState");
   const setState = jest.fn();
@@ -24,7 +27,9 @@ describe("ButtonTable", () => {
   it("updateButton should trigger onClick", () => {
     wrapper.find("#updateButton").simulate("click");
     expect(mockFunction).toHaveBeenCalled();
-    expect(mockFunction.mock.calls[0][0]).toBe("Update");
+    // expect(mockFunction.mock.calls[0][0]).toBe("Update");
+    expect(mockFunction).toHaveBeenCalledWith("Update");
+
     // const alertComp = ReactTestUtils.renderIntoDocument(<Alert />);
     // expect(ReactTestUtils.isDOMComponent(<Alert />)).toBe(true);
 

@@ -31,32 +31,6 @@ function App() {
   // var fs = require("browserify-fs");
   // var fs = require("fs");
 
-  function updateServices(buttonCaller) {
-    setOpen(true);
-    document.getElementById("actionName").innerHTML = " " + buttonCaller;
-
-    if (buttonCaller === "Update") {
-      // const newData = JSON.stringify(serviceData);
-      // const fileName = "imaginaryFile.json";
-      // fs.writeFile(fileName, newData, (err) => {
-      //   if (err) {
-      //     console.log("Error writing file", err);
-      //   } else {
-      //     console.log("Successfully wrote file");
-      //     fs.readFile(fileName, "utf-8", function read(err, data) {
-      //       if (err) {
-      //         console.log("ERROR");
-      //         throw err;
-      //       }
-      //       const content = data;
-      //       console.log(content);
-      //     });
-      //   }
-      // });
-      alert(JSON.stringify(serviceData));
-    }
-  }
-
   return (
     <div className="App">
       <div className={classes.root}>
@@ -96,7 +70,7 @@ function App() {
               <ServiceTable />
             </div>
             <Divider variant="middle" />
-            <ButtonTable onClickHandler={updateServices} />
+            <ButtonTable setOpen={setOpen} />
           </div>
         </div>
       </div>
