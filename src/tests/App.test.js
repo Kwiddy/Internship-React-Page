@@ -36,6 +36,30 @@ describe("Renders button-table buttons", () => {
     const tree = shallow(<Button id="updateButton" />);
     expect(tree).toMatchSnapshot();
   });
+  //import * as f from "../App";
+  //send eventhandler down to component as prop
+
+  // Move button table into sep component
+  // pass onclick as prop
+  it("Test cancel button click event", () => {
+    f.updateServices = jest.fn();
+    const button = mount(
+      <Button id="cancelButton" onClick={f.updateServices} />
+    );
+    expect(button.length).toBe(1);
+    button.simulate("click");
+    expect(f.updateServices).toHaveBeenCalled();
+  });
+
+  it("Test update button click event", () => {
+    f.updateServices = jest.fn();
+    const button = mount(
+      <Button id="updateButton" onClick={f.updateServices} />
+    );
+    expect(button.length).toBe(1);
+    button.simulate("click");
+    expect(f.updateServices).toHaveBeenCalled();
+  });
 });
 
 describe("App", () => {

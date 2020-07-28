@@ -32,8 +32,10 @@ function App() {
   // var fs = require("fs");
 
   function updateServices(buttonCaller) {
+    console.warn("I was clicked");
     setOpen(true);
-    document.getElementById("actionName").innerHTML = " " + buttonCaller;
+    var actionInsertP = document.getElementById("actionName");
+    actionInsertP.innerHTML = " " + buttonCaller;
 
     if (buttonCaller === "Update") {
       // const newData = JSON.stringify(serviceData);
