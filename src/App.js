@@ -27,6 +27,7 @@ const useStyles = makeStyles({
 function App() {
   const classes = useStyles();
   const [open, setOpen] = React.useState(false);
+  const [alertMsg, setAlertMsg] = React.useState("");
 
   // var fs = require("browserify-fs");
   // var fs = require("fs");
@@ -57,7 +58,7 @@ function App() {
                 id="action-alert"
               >
                 Action completed successfully:
-                <p id="actionName"></p>
+                <p id="actionName">{alertMsg}</p>
               </Alert>
             </Collapse>
             <div className="account-details">
@@ -70,7 +71,7 @@ function App() {
               <ServiceTable />
             </div>
             <Divider variant="middle" />
-            <ButtonTable setOpen={setOpen} />
+            <ButtonTable setOpen={setOpen} setAlertMsg={setAlertMsg} />
           </div>
         </div>
       </div>

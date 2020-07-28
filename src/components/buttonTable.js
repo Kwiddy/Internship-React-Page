@@ -10,7 +10,7 @@ class ButtonTable extends React.Component {
   updateServices(buttonCaller) {
     this.props.setOpen(true);
     console.log(this.props);
-    document.getElementById("actionName").innerHTML = " " + buttonCaller;
+    this.props.setAlertMsg("Update");
 
     if (buttonCaller === "Update") {
       // const newData = JSON.stringify(serviceData);
