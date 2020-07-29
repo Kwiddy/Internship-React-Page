@@ -44,6 +44,7 @@ describe("ButtonTable", () => {
     expect(mockFunction).toHaveBeenCalled();
     // expect(mockFunction.mock.calls[1][0]).toBe("Cancel");
   });
+  window.alert = jest.fn();
 });
 
 // describe("Spy test", () => {
