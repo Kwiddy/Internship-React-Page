@@ -20,6 +20,8 @@ describe("ButtonTable", () => {
     <ButtonTable setOpen={mockFunction} setAlertMsg={mockFunction} />
   );
 
+  const btWrapper = new ButtonTable();
+
   const useStateSpy = jest.spyOn(React, "useState");
   const setState = jest.fn();
   useStateSpy.mockImplementation((init) => [init, setState]);
@@ -36,6 +38,8 @@ describe("ButtonTable", () => {
     // Expect a change of state on button click
     expect(setState).toBeTruthy();
 
+    // expect(btWrapper.updateServices("Update")).toBeTruthy();
+
     // const wrapper2 = shallow(<App />);
     // expect(wrapper2.instance().state.open).toBe(true);
   });
@@ -44,6 +48,13 @@ describe("ButtonTable", () => {
     expect(mockFunction).toHaveBeenCalled();
     // expect(mockFunction.mock.calls[1][0]).toBe("Cancel");
   });
+  it("Should render the button table", () => {
+    expect(wrapper).toMatchSnapshot();
+  });
+  // it("Should call updateServices", () => {
+  //   const wrapper = new ButtonTable();
+  //   expect(wrapper.updateServices("Update")).toBeTruthy();
+  // });
   window.alert = jest.fn();
 });
 

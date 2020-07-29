@@ -30,7 +30,9 @@ class ButtonTable extends React.Component {
       //   }
       // });
       alert(JSON.stringify(serviceData));
+      // return true;
     }
+    // return false;
   }
 
   render() {
