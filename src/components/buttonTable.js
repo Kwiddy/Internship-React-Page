@@ -9,7 +9,6 @@ class ButtonTable extends React.Component {
 
   updateServices(buttonCaller) {
     this.props.setOpen(true);
-    console.log(this.props);
     this.props.setAlertMsg(buttonCaller);
 
     if (buttonCaller === "Update") {
