@@ -47,7 +47,6 @@ function App() {
                     size="small"
                     onClick={() => {
                       setOpen(false);
-                      document.getElementById("actionName").innerHTML = "";
                     }}
                     id="action-alert"
                     value=""
