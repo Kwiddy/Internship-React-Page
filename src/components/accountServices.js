@@ -37,6 +37,7 @@ class ServiceTable extends React.Component {
               id={id}
               handleCheckChieldElement={this.handleCheckChieldElement}
               {...service}
+              className="commonCheckbox"
             />
           </td>
           <td>Description of service lorem ipsum dolor sit amet</td>

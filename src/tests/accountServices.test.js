@@ -12,6 +12,17 @@ describe("accountServices", () => {
   });
 });
 
+// it("should change state", () => {
+//   const wrapper = mount(<ServiceTable />);
+//   const listItems = [...wrapper.find(".commonCheckbox")];
+//   for (const item in listItems) {
+//     //temp test
+//     console.log(listItems[item]);
+//     expect(listItems[item].prop("checked")).toBe(false);
+//   }
+//   // expect(wrapper.find(".commonCheckbox").prop("checked")).toBe(true);
+// });
+
 // describe("Test main checkbox component", () => {
 //   it("Test click event", () => {
 //     const mockCallBack = jest.fn();
