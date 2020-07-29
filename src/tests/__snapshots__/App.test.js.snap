@@ -106,6 +106,7 @@ exports[`App renders correctly 1`] = `
                         aria-hidden={true}
                         className="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit"
                         focusable="false"
+                        id="close-icon"
                         viewBox="0 0 24 24"
                       >
                         <path

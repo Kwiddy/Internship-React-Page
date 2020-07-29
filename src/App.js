@@ -4,8 +4,6 @@ import Typography from "@material-ui/core/Typography";
 import { makeStyles } from "@material-ui/core";
 import Alert from "@material-ui/lab/Alert";
 // import Button from "@material-ui/core/Button";
-import IconButton from "@material-ui/core/IconButton";
-import CloseIcon from "@material-ui/icons/Close";
 import Divider from "@material-ui/core/Divider";
 import Collapse from "@material-ui/core/Collapse";
 
@@ -16,6 +14,7 @@ import DetTable from "./components/accountDetails.js";
 import ServiceTable from "./components/accountServices.js";
 import Header from "./components/header.js";
 import ButtonTable from "./components/buttonTable.js";
+import AlertContent from "./components/alertContent.js";
 // import * as serviceData from "./ExampleData/accountServices.json";
 
 const useStyles = makeStyles({
@@ -29,9 +28,6 @@ function App() {
   const [open, setOpen] = React.useState(false);
   const [alertMsg, setAlertMsg] = React.useState("");
 
-  // var fs = require("browserify-fs");
-  // var fs = require("fs");
-
   return (
     <div className="App">
       <div className={classes.root}>
@@ -40,20 +36,7 @@ function App() {
           <div className="page-block">
             <Collapse in={open}>
               <Alert
-                action={
-                  <IconButton
-                    aria-label="close"
-                    color="inherit"
-                    size="small"
-                    onClick={() => {
-                      setOpen(false);
-                    }}
-                    id="action-alert"
-                    value=""
-                  >
-                    <CloseIcon fontSize="inherit" />
-                  </IconButton>
-                }
+                action={<AlertContent setOpen={setOpen} />}
                 id="action-alert"
               >
                 Action completed successfully:
