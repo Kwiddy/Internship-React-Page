@@ -11,8 +11,6 @@ import App from "../App";
 import Alert from "@material-ui/lab/Alert";
 import * as f from "../App";
 
-configure({ adapter: new Adapter() });
-
 /*
 test("Renders header", () => {
   const { getByText } = render(<App />);

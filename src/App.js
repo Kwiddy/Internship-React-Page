@@ -16,7 +16,7 @@ import DetTable from "./components/accountDetails.js";
 import ServiceTable from "./components/accountServices.js";
 import Header from "./components/header.js";
 import ButtonTable from "./components/buttonTable.js";
-import * as serviceData from "./ExampleData/accountServices.json";
+// import * as serviceData from "./ExampleData/accountServices.json";
 
 const useStyles = makeStyles({
   root: {

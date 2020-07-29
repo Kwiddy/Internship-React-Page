@@ -11,8 +11,6 @@ import App from "../App";
 import * as f from "../App";
 import ButtonTable from "../components/buttonTable.js";
 
-configure({ adapter: new Adapter() });
-
 describe("ButtonTable", () => {
   let newElement = document.createElement("p");
   newElement.id = "actionName";
