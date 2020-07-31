@@ -27,7 +27,6 @@ describe("ButtonTable", () => {
   it("updateButton should trigger onClick", () => {
     wrapper.find("#updateButton").simulate("click");
     expect(mockFunction).toHaveBeenCalled();
-    // expect(mockFunction.mock.calls[0][0]).toBe("Update");
     expect(mockFunction).toHaveBeenCalledWith("Update");
 
     // const alertComp = ReactTestUtils.renderIntoDocument(<Alert />);
@@ -42,7 +41,6 @@ describe("ButtonTable", () => {
   it("cancelButton should trigger onClick", () => {
     wrapper.find("#cancelButton").simulate("click");
     expect(mockFunction).toHaveBeenCalled();
-    // expect(mockFunction.mock.calls[1][0]).toBe("Cancel");
   });
   it("Should render the button table", () => {
     expect(wrapper).toMatchSnapshot();
