@@ -15,7 +15,6 @@ class ServiceTable extends React.Component {
     let services = this.state.services;
     services.forEach((service) => (service.isChecked = event.target.checked));
     this.setState({ services: services });
-    return true;
   };
 
   handleCheckChildElement = (event) => {
@@ -25,7 +24,6 @@ class ServiceTable extends React.Component {
         service.isChecked = event.target.checked;
     });
     this.setState({ services: services });
-    return true;
   };
 
   renderTableData() {
