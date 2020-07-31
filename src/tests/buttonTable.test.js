@@ -20,8 +20,6 @@ describe("ButtonTable", () => {
     <ButtonTable setOpen={mockFunction} setAlertMsg={mockFunction} />
   );
 
-  const btWrapper = new ButtonTable();
-
   const useStateSpy = jest.spyOn(React, "useState");
   const setState = jest.fn();
   useStateSpy.mockImplementation((init) => [init, setState]);
@@ -38,8 +36,6 @@ describe("ButtonTable", () => {
     // Expect a change of state on button click
     expect(setState).toBeTruthy();
 
-    // expect(btWrapper.updateServices("Update")).toBeTruthy();
-
     // const wrapper2 = shallow(<App />);
     // expect(wrapper2.instance().state.open).toBe(true);
   });
@@ -51,26 +47,13 @@ describe("ButtonTable", () => {
   it("Should render the button table", () => {
     expect(wrapper).toMatchSnapshot();
   });
-  // it("Should call updateServices", () => {
-  //   const wrapper = new ButtonTable();
-  //   expect(wrapper.updateServices("Update")).toBeTruthy();
-  // });
+  it("Only Update should call updateServices", () => {
+    const wrapper = shallow(
+      <ButtonTable setOpen={mockFunction} setAlertMsg={mockFunction} />
+    );
+    const instance = wrapper.instance();
+    expect(instance.updateServices("Update")).toBeTruthy;
+    expect(instance.updateServices("Cancel")).tobeFalsey;
+  });
   window.alert = jest.fn();
 });
-
-// describe("Spy test", () => {
-//   // const component = shallow(<App />);
-//   // const compSpy = jest.spyOn(component.instance(), "updateServices");
-//   // expect(compSpy).toHaveBeenCalledTimes(1);
-//   it("clicks it", () => {
-//     let app = shallow(<App />);
-//     console.warn(app);
-//     const spy = jest.spyOn(app.instance(), "updateServices");
-
-//     // instance.forceUpdate();
-
-//     // const p = app.find('.App-intro')
-//     // p.simulate('click')
-//     // expect(spy).toHaveBeenCalled()
-//   });
-// });
