@@ -17,7 +17,7 @@ class ServiceTable extends React.Component {
     this.setState({ services: services });
   };
 
-  handleCheckChieldElement = (event) => {
+  handleCheckChildElement = (event) => {
     let services = this.state.services;
     services.forEach((service) => {
       if (service.value === event.target.value)
@@ -35,7 +35,7 @@ class ServiceTable extends React.Component {
             <CheckBox
               key={index}
               id={id}
-              handleCheckChieldElement={this.handleCheckChieldElement}
+              handleCheckChildElement={this.handleCheckChildElement}
               {...service}
               className="commonCheckbox"
             />
