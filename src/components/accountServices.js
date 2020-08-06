@@ -4,12 +4,13 @@ import accountServices from "../ExampleData/accountServices.json";
 import "../styles/serviceTableStyle.css";
 
 class ServiceTable extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      services: accountServices,
-    };
-  }
+  // constructor(props) {
+  //   super(props);
+  //   // this.state = {
+  //   //   services: accountServices,
+  //   // };
+  //   this.props.setServices(true);
+  // }
 
   handleAllChecked = (event) => {
     let services = this.state.services;
@@ -27,7 +28,9 @@ class ServiceTable extends React.Component {
   };
 
   renderTableData() {
-    return this.state.services.map((service, index) => {
+    this.props.setServices(true);
+    console.warn(this.props);
+    return this.props.setServices.map((service, index) => {
       const { id } = service;
       return (
         <tr key={id}>
@@ -57,7 +60,7 @@ class ServiceTable extends React.Component {
                   <li>
                     <input
                       type="checkbox"
-                      onChange={this.handleAllChecked}
+                      onClick={this.handleAllChecked}
                       value="checkedall"
                       id="checkedall"
                       ref="checkedall"

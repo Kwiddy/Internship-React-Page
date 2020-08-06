@@ -16,6 +16,7 @@ import Header from "./components/header.js";
 import ButtonTable from "./components/buttonTable.js";
 import AlertContent from "./components/alertContent.js";
 // import * as serviceData from "./ExampleData/accountServices.json";
+import accountServices from "./ExampleData/accountServices.json";
 
 const useStyles = makeStyles({
   root: {
@@ -26,6 +27,7 @@ const useStyles = makeStyles({
 function App() {
   const classes = useStyles();
   const [open, setOpen] = React.useState(false);
+  const [services, setServices] = React.useState(accountServices);
   const [alertMsg, setAlertMsg] = React.useState("");
 
   return (
@@ -50,7 +52,7 @@ function App() {
             <Divider variant="middle" />
             <div className="available-services">
               <Typography variant="h5">Available services</Typography>
-              <ServiceTable />
+              <ServiceTable setServices={setServices} />
             </div>
             <Divider variant="middle" />
             <ButtonTable setOpen={setOpen} setAlertMsg={setAlertMsg} />
